@@ -1,4 +1,6 @@
-data
-results
+data/
+results/
 job.sh
-logs
+logs/
+*.err
+*.out
