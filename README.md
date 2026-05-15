@@ -13,7 +13,15 @@ The experiments use the [ArtBench-10 dataset](https://www.kaggle.com/datasets/al
 
 ## Dataset
 
-The notebooks expect the ArtBench-10 image-folder split in this layout:
+The notebooks expect the ArtBench-10 image-folder split at `data/artbench-10`. The dataset is not committed to the repository because of its size.
+
+Follow [DATASET.md](DATASET.md) to download ArtBench-10, place it in the expected folder, and validate the local layout with:
+
+```bash
+python scripts/check_dataset.py
+```
+
+The final folder structure should look like this:
 
 ```text
 data/
@@ -41,8 +49,6 @@ data/
       surrealism/
       ukiyo_e/
 ```
-
-The dataset is not committed to the repository because of its size. Download ArtBench-10 from Kaggle or the official ArtBench release, then place it under `data/artbench-10`.
 
 ## Results
 
@@ -99,8 +105,8 @@ If you plan to rerun the ResNet or Vision Transformer notebooks, use a GPU-enabl
 
 Then:
 
-1. Download ArtBench-10.
-2. Place the image-folder split at `data/artbench-10`.
+1. Follow [DATASET.md](DATASET.md) to download ArtBench-10 into `data/artbench-10`.
+2. Run `python scripts/check_dataset.py` to verify the folder layout and image counts.
 3. Open the notebooks in order.
 4. Run each notebook top to bottom.
 
@@ -112,8 +118,11 @@ Then:
 |-- 02_mlp.ipynb
 |-- 03_resnet.ipynb
 |-- 04_vt.ipynb
+|-- DATASET.md
 |-- requirements.txt
 |-- README.md
+|-- scripts/
+|   `-- check_dataset.py
 `-- .gitignore
 ```
 

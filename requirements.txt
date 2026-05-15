@@ -10,6 +10,9 @@ tqdm>=4.66
 jupyter>=1.0
 ipykernel>=6.25
 
+# Dataset download helper
+kaggle>=1.6
+
 # PyTorch notebooks and ResNet-50 feature extraction
 torch>=2.0
 torchvision>=0.15
