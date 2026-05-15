@@ -52,6 +52,8 @@ data/
 
 ## Results
 
+![Model comparison chart](assets/model_comparison.svg)
+
 | Notebook | Model | Representation | Test accuracy | Test top-5 |
 |---|---:|---|---:|---:|
 | `01_linear_models.ipynb` | Gaussian Naive Bayes | Raw pixels + PCA | 22.27% | - |
@@ -119,6 +121,8 @@ Then:
 |-- 03_resnet.ipynb
 |-- 04_vt.ipynb
 |-- DATASET.md
+|-- assets/
+|   `-- model_comparison.svg
 |-- requirements.txt
 |-- README.md
 |-- scripts/

@@ -1,0 +1,52 @@
+<svg width="960" height="520" viewBox="0 0 960 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ArtBench-10 model comparison</title>
+  <desc id="desc">Horizontal bar chart comparing test accuracy across classical models, an MLP, ResNet-50 embeddings, ResNet fine-tuning, and Vision Transformer fine-tuning.</desc>
+  <rect width="960" height="520" fill="#fbfaf7"/>
+  <text x="48" y="58" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#222222">ArtBench-10 Style Classification</text>
+  <text x="48" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#666666">Test accuracy by model family</text>
+
+  <line x1="330" y1="120" x2="330" y2="430" stroke="#d8d3c9" stroke-width="1"/>
+  <line x1="523" y1="120" x2="523" y2="430" stroke="#ebe7df" stroke-width="1"/>
+  <line x1="716" y1="120" x2="716" y2="430" stroke="#ebe7df" stroke-width="1"/>
+  <line x1="870" y1="120" x2="870" y2="430" stroke="#ebe7df" stroke-width="1"/>
+
+  <text x="324" y="458" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#777777">0%</text>
+  <text x="523" y="458" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#777777">25%</text>
+  <text x="716" y="458" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#777777">50%</text>
+  <text x="870" y="458" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#777777">70%</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#333333">
+    <text x="48" y="142">Naive Bayes, raw pixels + PCA</text>
+    <text x="48" y="178">Logistic Regression, raw pixels + PCA</text>
+    <text x="48" y="214">LDA, raw pixels + PCA</text>
+    <text x="48" y="250">QDA, raw pixels + PCA</text>
+    <text x="48" y="286">MLP, raw pixels</text>
+    <text x="48" y="322">Logistic Regression, ResNet features</text>
+    <text x="48" y="358">Fine-tuned ResNet</text>
+    <text x="48" y="394">Fine-tuned Vision Transformer</text>
+  </g>
+
+  <g>
+    <rect x="330" y="126" width="172" height="18" rx="4" fill="#9ca3af"/>
+    <rect x="330" y="162" width="186" height="18" rx="4" fill="#9ca3af"/>
+    <rect x="330" y="198" width="187" height="18" rx="4" fill="#9ca3af"/>
+    <rect x="330" y="234" width="195" height="18" rx="4" fill="#9ca3af"/>
+    <rect x="330" y="270" width="236" height="18" rx="4" fill="#5f8f89"/>
+    <rect x="330" y="306" width="441" height="18" rx="4" fill="#d38b5d"/>
+    <rect x="330" y="342" width="519" height="18" rx="4" fill="#3f6f8f"/>
+    <rect x="330" y="378" width="521" height="18" rx="4" fill="#7a5ea8"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#222222">
+    <text x="516" y="142">22.27%</text>
+    <text x="530" y="178">24.11%</text>
+    <text x="531" y="214">24.25%</text>
+    <text x="539" y="250">25.22%</text>
+    <text x="580" y="286">30.54%</text>
+    <text x="785" y="322">57.16%</text>
+    <text x="863" y="358">67.25%</text>
+    <text x="865" y="394">67.58%</text>
+  </g>
+
+  <text x="48" y="486" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#666666">Transfer learning is the main jump: pretrained visual features and fine-tuning far outperform raw-pixel baselines.</text>
+</svg>

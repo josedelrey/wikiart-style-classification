@@ -4,3 +4,4 @@ job.sh
 logs/
 *.err
 *.out
+__pycache__/
