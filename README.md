@@ -129,19 +129,3 @@ Then:
 |   `-- check_dataset.py
 `-- .gitignore
 ```
-
-Ignored local directories:
-
-- `data/`: local dataset files.
-- `results/`: cached PCA arrays, extracted features, and generated experiment artifacts.
-- `logs/`: local training or job logs.
-
-## Limitations and Next Steps
-
-The strongest models still show a gap between training and test performance, especially the ResNet experiment, which reaches 100% training accuracy but 67.25% test accuracy. This suggests overfitting and domain shift between the training split and unseen test artists.
-
-Future improvements could include stronger regularization, more systematic augmentation, cross-validation across artist splits, model ensembling, and a small inference demo for uploading a painting and viewing predicted style probabilities.
-
-## What This Project Demonstrates
-
-This repository demonstrates practical ML experimentation: building baselines, improving representations, comparing architectures, reading failure modes through confusion matrices, and communicating results clearly. It is a compact example of how model performance changes when moving from hand-engineered features to modern transfer learning.
